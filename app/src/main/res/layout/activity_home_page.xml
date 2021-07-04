@@ -1,0 +1,142 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePage">
+
+    <ImageView
+        android:id="@+id/BannerImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintDimensionRatio="7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/banner1" />
+
+    <ImageView
+        android:id="@+id/StudioView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:elevation="10dp"
+        android:foreground="#4D000000"
+        android:outlineProvider="bounds"
+        android:src="@drawable/ani_image"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintEnd_toStartOf="@+id/MineView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BannerImage" />
+
+    <TextView
+        android:id="@+id/StudioText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/ripple"
+        android:clickable="true"
+        android:elevation="10dp"
+        android:focusable="true"
+        android:gravity="center"
+        android:onClick="toPaintPage"
+        android:text="开始"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="@+id/StudioView"
+        app:layout_constraintEnd_toEndOf="@+id/StudioView"
+        app:layout_constraintStart_toStartOf="@+id/StudioView"
+        app:layout_constraintTop_toTopOf="@+id/StudioView" />
+
+    <View
+        android:id="@+id/MineBack"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/paper"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/MineView"
+        app:layout_constraintEnd_toEndOf="@+id/MineView"
+        app:layout_constraintStart_toStartOf="@+id/MineView"
+        app:layout_constraintTop_toTopOf="@+id/MineView" />
+
+    <com.example.mondrian.PaintingView
+        android:id="@+id/MineView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:elevation="10dp"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/StudioView"
+        app:layout_constraintTop_toBottomOf="@+id/BannerImage" />
+
+    <View
+        android:id="@+id/MineCover"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#4D000000"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/MineView"
+        app:layout_constraintEnd_toEndOf="@+id/MineView"
+        app:layout_constraintStart_toStartOf="@+id/MineView"
+        app:layout_constraintTop_toTopOf="@+id/MineView" />
+
+    <TextView
+        android:id="@+id/MineText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/ripple"
+        android:clickable="true"
+        android:elevation="10dp"
+        android:focusable="true"
+        android:gravity="center"
+        android:onClick="toMyPaintingsPage"
+        android:text="我的\n作品"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="@+id/MineView"
+        app:layout_constraintEnd_toEndOf="@+id/MineView"
+        app:layout_constraintStart_toStartOf="@+id/MineView"
+        app:layout_constraintTop_toTopOf="@+id/MineView" />
+
+    <com.example.mondrian.PaintingView
+        android:id="@+id/GalleryView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="24dp"
+        android:background="@color/paper"
+        android:elevation="10dp"
+        android:foreground="#4D000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/StudioView" />
+
+    <TextView
+        android:id="@+id/GalleryText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/ripple"
+        android:clickable="true"
+        android:elevation="10dp"
+        android:focusable="true"
+        android:gravity="center"
+        android:onClick="toTopGalleryPage"
+        android:text="查看画廊"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="@+id/GalleryView"
+        app:layout_constraintEnd_toEndOf="@+id/GalleryView"
+        app:layout_constraintStart_toStartOf="@+id/GalleryView"
+        app:layout_constraintTop_toTopOf="@+id/GalleryView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

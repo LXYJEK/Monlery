@@ -1,0 +1,240 @@
+<animated-vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    <aapt:attr name="android:drawable">
+        <vector android:width="180dp"
+            android:height="180dp"
+            android:viewportWidth="960"
+            android:viewportHeight="960">
+            <path android:name="fill0"
+                android:pathData="M0,0h960v960h-960z"
+                android:fillColor="#EEF0EB" />
+            <path android:name="line1"
+                android:pathData="M0,700L0,700"
+                android:strokeWidth="16"
+                android:strokeColor="#000"/>
+            <path android:name="line2"
+                android:pathData="M215,0L215,0"
+                android:strokeWidth="16"
+                android:strokeColor="#000"/>
+            <path android:name="line3"
+                android:pathData="M869,700L869,700"
+                android:strokeWidth="16"
+                android:strokeColor="#000"/>
+            <path android:name="line4"
+                android:pathData="M0,306L0,306"
+                android:strokeWidth="16"
+                android:strokeColor="#000"/>
+            <path android:name="line5"
+                android:pathData="M0,322L0,322"
+                android:strokeWidth="16"
+                android:strokeColor="#000"/>
+            <path android:name="line6"
+                android:pathData="M869,822L869,822"
+                android:strokeWidth="16"
+                android:strokeColor="#000"/>
+            <path android:name="line7"
+                android:pathData="M869,838L869,838"
+                android:strokeWidth="16"
+                android:strokeColor="#000"/>
+            <path android:name="fill1"
+                android:pathData="M223,0h737v692h-737z"
+                android:fillAlpha="0"
+                android:fillColor="#C53632" />
+            <path android:name="fill2"
+                android:pathData="M0,708h207v252h-207z"
+                android:fillAlpha="0"
+                android:fillColor="#3E4984"/>
+            <path android:name="fill3"
+                android:pathData="M877,846h83v114h-83z"
+                android:fillAlpha="0"
+                android:fillColor="#F3CA18"/>
+        </vector>
+    </aapt:attr>
+    <target android:name="line1">
+        <aapt:attr name="android:animation">
+            <objectAnimator android:duration="900"
+                android:propertyName="pathData"
+                android:valueType="pathType"
+                android:valueFrom="M0,700L0,700"
+                android:valueTo="M0,700L960,700" />
+        </aapt:attr>
+    </target>
+    <target android:name="line2">
+        <aapt:attr name="android:animation">
+            <objectAnimator android:duration="900"
+                android:propertyName="pathData"
+                android:startOffset="900"
+                android:valueType="pathType"
+                android:valueFrom="M215,0L215,0"
+                android:valueTo="M215,0L215,960" />
+        </aapt:attr>
+    </target>
+    <target android:name="line3">
+        <aapt:attr name="android:animation">
+            <objectAnimator android:duration="900"
+                android:propertyName="pathData"
+                android:startOffset="1800"
+                android:valueType="pathType"
+                android:valueFrom="M869,700L869,700"
+                android:valueTo="M869,700L869,960" />
+        </aapt:attr>
+    </target>
+    <target android:name="line4">
+        <aapt:attr name="android:animation">
+            <objectAnimator android:duration="900"
+                android:propertyName="pathData"
+                android:startOffset="2700"
+                android:valueType="pathType"
+                android:valueFrom="M0,306L0,306"
+                android:valueTo="M0,306L215,306" />
+        </aapt:attr>
+    </target>
+    <target android:name="line5">
+        <aapt:attr name="android:animation">
+            <objectAnimator android:duration="900"
+                android:propertyName="pathData"
+                android:startOffset="3600"
+                android:valueType="pathType"
+                android:valueFrom="M0,322L0,322"
+                android:valueTo="M0,322L215,322" />
+        </aapt:attr>
+    </target>
+    <target android:name="line6">
+        <aapt:attr name="android:animation">
+            <objectAnimator android:duration="900"
+                android:propertyName="pathData"
+                android:startOffset="4500"
+                android:valueType="pathType"
+                android:valueFrom="M869,822L869,822"
+                android:valueTo="M869,822L960,822" />
+        </aapt:attr>
+    </target>
+    <target android:name="line7">
+        <aapt:attr name="android:animation">
+            <objectAnimator android:duration="900"
+                android:propertyName="pathData"
+                android:startOffset="5400"
+                android:valueType="pathType"
+                android:valueFrom="M869,838L869,838"
+                android:valueTo="M869,838L960,838" />
+        </aapt:attr>
+    </target>
+    <target android:name="fill1">
+        <aapt:attr name="android:animation">
+            <objectAnimator android:duration="900"
+                android:propertyName="fillAlpha"
+                android:startOffset="6300"
+                android:valueFrom="0"
+                android:valueTo="1" />
+        </aapt:attr>
+    </target>
+    <target android:name="fill2">
+        <aapt:attr name="android:animation">
+            <objectAnimator android:duration="900"
+                android:propertyName="fillAlpha"
+                android:startOffset="7200"
+                android:valueFrom="0"
+                android:valueTo="1" />
+        </aapt:attr>
+    </target>
+    <target android:name="fill3">
+        <aapt:attr name="android:animation">
+            <objectAnimator android:duration="900"
+                android:propertyName="fillAlpha"
+                android:startOffset="8100"
+                android:valueFrom="0"
+                android:valueTo="1" />
+        </aapt:attr>
+    </target>
+    <target android:name="line1">
+        <aapt:attr name="android:animation">
+            <objectAnimator android:duration="1800"
+                android:propertyName="strokeAlpha"
+                android:startOffset="16200"
+                android:valueFrom="1"
+                android:valueTo="0" />
+        </aapt:attr>
+    </target>
+    <target android:name="line2">
+        <aapt:attr name="android:animation">
+            <objectAnimator android:duration="1800"
+                android:propertyName="strokeAlpha"
+                android:startOffset="16200"
+                android:valueFrom="1"
+                android:valueTo="0" />
+        </aapt:attr>
+    </target>
+    <target android:name="line3">
+        <aapt:attr name="android:animation">
+            <objectAnimator android:duration="1800"
+                android:propertyName="strokeAlpha"
+                android:startOffset="16200"
+                android:valueFrom="1"
+                android:valueTo="0" />
+        </aapt:attr>
+    </target>
+    <target android:name="line4">
+        <aapt:attr name="android:animation">
+            <objectAnimator android:duration="1800"
+                android:propertyName="strokeAlpha"
+                android:startOffset="16200"
+                android:valueFrom="1"
+                android:valueTo="0" />
+        </aapt:attr>
+    </target>
+    <target android:name="line5">
+        <aapt:attr name="android:animation">
+            <objectAnimator android:duration="1800"
+                android:propertyName="strokeAlpha"
+                android:startOffset="16200"
+                android:valueFrom="1"
+                android:valueTo="0" />
+        </aapt:attr>
+    </target>
+    <target android:name="line6">
+        <aapt:attr name="android:animation">
+            <objectAnimator android:duration="1800"
+                android:propertyName="strokeAlpha"
+                android:startOffset="16200"
+                android:valueFrom="1"
+                android:valueTo="0" />
+        </aapt:attr>
+    </target>
+    <target android:name="line7">
+        <aapt:attr name="android:animation">
+            <objectAnimator android:duration="1800"
+                android:propertyName="strokeAlpha"
+                android:startOffset="16200"
+                android:valueFrom="1"
+                android:valueTo="0" />
+        </aapt:attr>
+    </target>
+    <target android:name="fill1">
+        <aapt:attr name="android:animation">
+            <objectAnimator android:duration="1800"
+                android:propertyName="fillAlpha"
+                android:startOffset="16200"
+                android:valueFrom="1"
+                android:valueTo="0" />
+        </aapt:attr>
+    </target>
+    <target android:name="fill2">
+        <aapt:attr name="android:animation">
+            <objectAnimator android:duration="1800"
+                android:propertyName="fillAlpha"
+                android:startOffset="16200"
+                android:valueFrom="1"
+                android:valueTo="0" />
+        </aapt:attr>
+    </target>
+    <target android:name="fill3">
+        <aapt:attr name="android:animation">
+            <objectAnimator android:duration="1800"
+                android:propertyName="fillAlpha"
+                android:startOffset="16200"
+                android:valueFrom="1"
+                android:valueTo="0" />
+        </aapt:attr>
+    </target>
+</animated-vector>
